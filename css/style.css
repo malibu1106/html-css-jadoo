@@ -1,0 +1,65 @@
+body{background:rgb(240, 229, 229);}
+/* COULEURS */
+.texte_orange{
+    color:#DF6951;
+}
+.texte_gris_1{
+    color:#BFC0CD;
+}
+.texte_gris_2{
+    color:#8d8d8d;
+}
+.texte_gris_3{
+    color:#3E3F43;
+}
+.texte_gris_4{
+    color:#5E6282;
+}
+.texte_bleu{
+    color:#1E1D4C;
+}
+.texte_sombre{
+    color:#22232C;
+}
+.texte_violet{
+    color: #14183E;
+}
+.texte_noir{
+    color:#000;
+}
+.texte_blanc{
+    color:white;
+}
+.texte_vert{
+    color:green;
+}
+/* POLICES */
+.texte_poppins_regular{
+    font-family: 'poppins-regular';
+}
+.texte_poppins_bold {
+    font-family: 'poppins-bold';
+}
+
+.texte_volkhov_bold {
+    font-family: 'volkhov-bold';
+}
+
+
+
+/*TITRES */
+h1, h2{
+    font-family:'volkhov-regular';
+}
+h1{
+    font-size:84px;
+}
+h2{
+    font-size:50px;
+}
+h3{
+    font-size: 20px;
+}
+nav ul{
+    font-family:'Arial';
+}
