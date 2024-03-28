@@ -1,4 +1,19 @@
+/*global */
+/*TEMP*/
 body{background:rgb(240, 229, 229);}
+/*TEMP*/
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:underline;
+}
+.uppercase{
+    text-transform: uppercase;
+}
 /* COULEURS */
 .texte_orange{
     color:#DF6951;
@@ -14,6 +29,9 @@ body{background:rgb(240, 229, 229);}
 }
 .texte_gris_4{
     color:#5E6282;
+}
+.texte_gris_5{
+    color:#989898;
 }
 .texte_bleu{
     color:#1E1D4C;
@@ -40,17 +58,21 @@ body{background:rgb(240, 229, 229);}
 .texte_poppins_bold {
     font-family: 'poppins-bold';
 }
-
 .texte_volkhov_bold {
     font-family: 'volkhov-bold';
+}
+.texte_opensans_regular{
+    font-family: "open-sans-regular";
+}
+.titre_maki{
+    font-size: 20px;
+    font-weight:600;
 }
 
 
 
 /*TITRES */
-h1, h2{
-    font-family:'volkhov-regular';
-}
+
 h1{
     font-size:84px;
 }
@@ -59,6 +81,9 @@ h2{
 }
 h3{
     font-size: 20px;
+}
+h5{
+    font-size:16px;
 }
 nav ul{
     font-family:'Arial';
