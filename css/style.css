@@ -1,7 +1,22 @@
 /*global */
-/*TEMP*/
-body{background:rgb(240, 229, 229);}
-/*TEMP*/
+* {
+    margin: 0;
+    padding: 0;
+}
+.yellowButton
+{background-color:#f1a501;
+color:white;
+width:180px;
+height:50px;
+border:none;
+border-radius: 10px;
+margin-top:25px;
+font-size:18px;
+font-weight:400;}
+/*IMG GENERAL */
+.image50px
+{width:50px;}
+
 li{
     list-style: none;
 }
@@ -88,3 +103,70 @@ h5{
 nav ul{
     font-family:'Arial';
 }
+
+/* HEADER */
+header{
+    height:70px;
+    background-color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;}
+#logo{
+    margin-left:8%;
+    display: inline-flex;
+    gap:20px;}
+#logo img{
+height:30px;}
+nav{
+    margin-right:10%;
+    align-items: center;
+    align-items: center;}
+header ul{
+    display:inline-flex;
+    gap:30px;
+    font-family: 'Arial';
+    font-size:17px;
+    font-weight:500;}
+
+/* SECTIONS */
+/* SECTION 1 */
+#section1
+{background-image:url("../img/illustration_principale.jpg");
+    background-size:cover;
+    height:800px;
+}
+#section1 article
+{width:650px;
+padding-top:120px;
+padding-left:8%;}
+#section1 h1{
+    margin-top:40px;
+}
+#section1 h5{width:470px;
+margin-top:25px;
+line-height: 30px;
+font-weight:500;}
+/* SECTION 2 */
+#section2
+{background-image:url("../img/decor_1.svg");
+background-repeat:no-repeat;
+background-position:top right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FORMULAIRE */
+#container_formulaire
+{display:flex;}
+#formulaire_gauche, #formulaire_droite
+{width:50%;}
+
