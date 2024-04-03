@@ -103,7 +103,8 @@
         <section id="section3">
             <article>
                 <div id="conteneur_video">
-                    <img src="img/button_play.svg" alt="Lire la vidéo">
+                    <img id="bouton_lecture" alt="Lire la vidéo" src="img/button_play.svg">
+                    
                 </div>
                 
                 <h1 class="texte_blanc texte_volkhov_bold">Un voyage gastronomique entre le Japon et la France</h1>
@@ -166,79 +167,83 @@
 
         <section id="section5">            
                 <h4 class="texte_gris_4 texte_poppins_regular uppercase">Prendre rendez-vous</h4>
-                <h2 class="texte_violet texte_volkhov_bold">Contactez-nous pour réserver au restaurant</h2>
+                <h2 class="texte_violet texte_volkhov_bold">Contactez-nous<br> pour réserver au restaurant</h2>
                 <div id="container_formulaire">
                     <div id="formulaire_gauche">
                         <h4 class="texte_poppins_regular">Formulaire de contact</h4>
-                        <h5 class="texte_poppins_regular texte_gris_2">Remplissez le formulaire ci-dessous pour nous contacter</h5>
+                        <h5 class="texte_poppins_regular texte_gris_2">Remplissez le formulaire ci-dessous<br> pour nous contacter</h5>
                         <form>
-                            <div class="champ_formulaire">
-                            <label for="nom" class="texte_poppins_regular">Nom :</label>
-                            <input type="text" name="nom" type="text" placeholder="Nom" class="texte_gris_5" required>
+                            <div id="champ_formulaire_double">
+                                <div id="champ_formulaire_double_gauche">
+                                    <label for="nom" class="texte_poppins_regular">Nom</label><br>
+                                    <input type="text" id="name" name="nom" type="text" placeholder="Nom" class="texte_gris_5" required>
+                                </div>   
+                                <div id="champ_formulaire_double_droite">   
+                                    <label for="prenom" class="texte_poppins_regular">Prénom</label><br>
+                                    <input type="text" id="prenom" name="prenom" type="text" placeholder="Prénom" class="texte_gris_5" required>
+                                </div> 
                             </div>
                             <div class="champ_formulaire">
-                            <label for="prenom" class="texte_poppins_regular">Prénom :</label>
-                            <input type="text" name="prenom" type="text" placeholder="Prénom" class="texte_gris_5" required>
+                                <label for="email" class="texte_poppins_regular">Adresse Email</label><br>
+                                <input id="email" name="email" type="email" placeholder="xxx@gmail.com" class="texte_gris_5" required>
                             </div>
                             <div class="champ_formulaire">
-                            <label for="email" class="texte_poppins_regular">Adresse Email :</label>
-                            <input name="email" type="email" placeholder="xxx@gmail.com" class="texte_gris_5" required>
+                                <label for="zonedetexte" class="texte_poppins_regular">Message</label><br>
+                                <input type="text" id="message_formulaire_contact" placeholder="Votre message/demande de réservation
+                                " class="texte_gris_5" required>
                             </div>
-                            <div class="champ_formulaire">
-                            <label for="zonedetexte" class="texte_poppins_regular">Votre message :</label>
-                            <input  type="text" id="message_formulaire_contact" class="texte_gris_5" required>
-                            </div>
-                            <div class="champ_formulaire">
-                            <input type="submit" value="Envoyer"/>
+                                <div class="champ_formulaire">
+                                <input id="bouton-formulaire" type="submit" value="✔  Envoyer"/>
                             </div>
                         </form>
                     </div>
                     <div id="formulaire_droite">
-                        <img src="img/illustration_formulaire.jpg" alt="Jadoo">
+                        
                     </div>
                 </div>        
         </section>
 
     <footer>
-        <article id="footer1">
-            <img id="logoJadooFooter" alt="Logo du site Jadoo" src="img/logo_jadoo_1.svg" class="image50px">
-            <img id="logoJadooFooter2" alt="Logo du site Jadoo" src="img/logo_jadoo_2.svg">
-            <p class="texte_poppins_regular texte_gris_4">Un voyage gastronomique entre le Japon et la France</p>          
-        </article>
-        <article id="footer2">
-            <div class="footer_2_gauche_droite">
-                <h4 class="texte_poppins_bold">Restaurant</h4>
-                <ul class="texte_poppins_regular texte_gris_4">
-                    <li>Nouveautés</li>
-                    <li>Découvrir</li>
-                    <li>Commander</li>
-                </ul>
+            <div id="conteneur_footer">
+            <article id="footer1">
+                <img id="logoJadooFooter" alt="Logo du site Jadoo" src="img/logo_jadoo_1.svg" class="image50px">
+                <img id="logoJadooFooter2" height="50px" alt="Logo du site Jadoo" src="img/logo_jadoo_2.svg">
+                <p class="texte_poppins_regular texte_gris_4">Un voyage gastronomique entre<br>le Japon et la France</p>          
+            </article>
+            <article id="footer2">
+                <div class="footer2_gauche">
+                    <h4 class="texte_poppins_bold">Restaurant</h4>
+                    <ul class="texte_poppins_regular texte_gris_4">
+                        <li><a href="#">Nouveautés</a></li>
+                        <li><a href="#">Découvrir</a></li>
+                        <li><a href="#">Commander</a></li>
+                    </ul>
 
-            </div>
-            <div class="footer2_gauche_droite">
-                <h4 class="texte_poppins_bold">Contact</h4>
-                <ul class="texte_poppins_regular texte_gris_4">
-                    <li>Prendre RDV</li>
-                </ul>
+                </div>
+                <div class="footer2_droite">
+                    <h4 class="texte_poppins_bold">Contact</h4>
+                    <ul class="texte_poppins_regular texte_gris_4">
+                        <li><a href="#">Prendre RDV</a></li>
+                    </ul>
                 
-            </div>
+                </div>
             
-        </article>
-        <article id="footer3">
-            <img width="100px" src="img/logo_uberEats_2.svg" alt="Logo UberEats">
-            <h3 class="texte_poppins_regular texte_gris_4">Téléchargez UberEats</h3>
-            <button class="bouton_applications">
-                <img src="img/logo_google_play.svg" alt="Google Play Store">
-                GOOGLE PLAY
-            </button>
-            <button class="bouton_applications">
-                <img src="img/logo_apple.svg" alt="Apple Store">
-                APPLE STORE
-            </button>
+            </article>
+            <article id="footer3">
+                <img height="32px" src="img/logo_uberEats_2.svg" alt="Logo UberEats">
+                <h3 class="texte_poppins_regular texte_gris_4">Téléchargez UberEats</h3>
+                <button>
+                    <img class="bouton_applications" src="img/logo_google_play.svg" alt="Google Play Store">
+                    <p class="boutiques_app">GOOGLE PLAY</p>
+                </button>
+                <button>
+                    <img class="bouton_applications" src="img/logo_apple.svg" alt="Apple Store">
+                    <p class="boutiques_app">APPLE STORE</p>
+                </button>        
             
-            
-        </article>
-        <p class="texte_poppins_regular">Tous droits réservés @jadoo.com</p>
+            </article>
+        </div>
+        <p class="texte_poppins_regular texte_copyright texte_gris_4">Tous droits réservés @jadoo.com</p>
     </footer>
     
     
