@@ -8,3 +8,6 @@ DONE
 ###########################################
 #4 GROS REFRESH DU CSS AVANT RESPONSIVE ###
 ###########################################
+DONE QUICKLY :D
+
+#5 Fixer histoire de p / a dans les liens applestore/playstore

@@ -1,4 +1,5 @@
-/*global */
+/*RESET*/
+/*******/
 *,
 *::before,
 *::after {
@@ -19,10 +20,14 @@ img,
 picture,
 svg,
 video {
-    display: block;
     max-width: 100%;
 }
 
+/********/
+/********/
+
+/*GLOBAL*/
+/********/
 .yellowButton {
     background-color: #f1a501;
     color: white;
@@ -34,18 +39,22 @@ video {
     font-size: 18px;
     font-weight: 400;
     cursor: pointer;
-}
-
-.yellowButton:hover {
-    scale: 1.05;
-    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
     position: relative;
 }
 
-/*IMG GENERAL */
+.uppercase {
+    text-transform: uppercase;
+}
+
+/********/
+/********/
+
+/*IMG GENERAL*/
+/*************/
 .image50px {
     width: 50px;
 }
@@ -53,6 +62,12 @@ section {
 .image60px {
     width: 60px;
 }
+
+/********/
+/********/
+
+/*LIENS ET LISTES*/
+/*****************/
 
 li {
     list-style: none;
@@ -66,11 +81,12 @@ a:hover {
     text-decoration: underline;
 }
 
-.uppercase {
-    text-transform: uppercase;
-}
+/********/
+/********/
+
 
 /* COULEURS */
+/************/
 .texte_orange {
     color: #DF6951;
 }
@@ -119,7 +135,11 @@ a:hover {
     color: green;
 }
 
-/* POLICES */
+/********/
+/********/
+
+/*POLICES*/
+/*********/
 .texte_poppins_regular {
     font-family: 'poppins-regular';
 }
@@ -136,15 +156,13 @@ a:hover {
     font-family: "open-sans-regular";
 }
 
-.titre_maki {
-    font-size: 20px;
-    font-weight: 600;
-}
+
+/********/
+/********/
 
 
-
-/*TITRES */
-
+/*TITRES*/
+/********/
 h1 {
     font-size: 84px;
 }
@@ -161,11 +179,12 @@ h5 {
     font-size: 16px;
 }
 
-nav ul {
-    font-family: 'Arial';
-}
+/********/
+/********/
 
-/* HEADER */
+
+/*HEADER*/
+/********/
 header {
     height: 70px;
     background-color: white;
@@ -188,8 +207,6 @@ header {
     height: 30px;
 }
 
-
-
 nav {
     margin-right: 10%;
     align-items: center;
@@ -208,8 +225,18 @@ nav a {
     color: black;
 }
 
-/* SECTIONS */
-/* SECTION 1 */
+nav ul {
+    font-family: 'Arial';
+}
+
+/********/
+/********/
+
+/*SECTIONS*/
+/**********/
+
+/*SECTION 1*/
+/***********/
 #section1 {
     background-image: url("../img/illustration_principale.jpg");
     background-size: cover;
@@ -221,16 +248,13 @@ nav a {
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: 8% 95%;
+    margin-top: 40px;
 }
 
 #section1 article {
     width: 800px;
     padding-top: 120px;
     padding-left: 8%;
-}
-
-#section1 h1 {
-    margin-top: 40px;
 }
 
 #section1 h5 {
@@ -240,7 +264,11 @@ nav a {
     font-weight: 500;
 }
 
-/* SECTION 2 */
+/********/
+/********/
+
+/*SECTION 2*/
+/***********/
 #section2 {
     background-image: url("../img/decor_1.svg");
     background-repeat: no-repeat;
@@ -306,7 +334,6 @@ nav a {
 }
 
 #carte-ligne-2 {
-
     width: 1080px;
     margin: 100px auto;
     display: flex;
@@ -331,7 +358,16 @@ nav a {
     background: white;
 }
 
-/* TEST DECO ROSE */
+.titre_maki {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/********/
+/********/
+
+/*DECO ROSE MAKI*/
+/****************/
 
 #carte-ligne-2 .carte::after {
     content: "";
@@ -367,8 +403,6 @@ nav a {
     z-index: 200;
 }
 
-/*******************************/
-
 #carte-ligne-2 .titre_maki {
     margin-top: 40px;
 }
@@ -377,14 +411,17 @@ nav a {
     width: 150px;
     margin: 20px auto;
     line-height: 28px;
-
 }
 
 #section2 .yellowButton {
     margin: auto;
 }
 
+/********/
+/********/
+
 /* SECTION 3 */
+/*************/
 #section3 {
     background-image: url("../img/illustration_chef.jpg");
     background-size: cover;
@@ -415,7 +452,6 @@ nav a {
 }
 
 #conteneur_video img {
-
     background: white;
     border: solid white 3px;
     border-radius: 50%;
@@ -492,8 +528,11 @@ nav a {
     margin-top: 8px;
 }
 
+/********/
+/********/
 
 /*SECTION 5*/
+/***********/
 #section5 {
     height: 850px;
 }
@@ -513,7 +552,11 @@ h2 {
     margin-top: 10px;
 }
 
-/*FORMULAIRE */
+/********/
+/********/
+
+/*FORMULAIRE*/
+/************/
 #container_formulaire {
     max-width: 1020px;
     margin: 40px auto;
@@ -618,7 +661,11 @@ label {
     font-family: poppins-regular;
 }
 
+/********/
+/********/
+
 /*FOOTER*/
+/********/
 footer {
     background: #f3f3f3;
     height: 310px;
@@ -639,6 +686,7 @@ footer article {
 
 #footer1 img {
     margin-left: 20px;
+    display: inline;
 }
 
 #footer1 p {
@@ -700,6 +748,7 @@ footer article {
 
 #footer3 button {
     font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     height: 38px;
     width: 130px;
@@ -710,6 +759,7 @@ footer article {
 
 .bouton_applications img {
     height: 20px;
+    width: 20px;
     margin-left: -5px;
 }
 
@@ -720,6 +770,7 @@ footer article {
 }
 
 
+
 .texte_copyright {
     font-size: 14px;
     font-weight: 500;
@@ -727,7 +778,30 @@ footer article {
     text-align: center;
 }
 
-/* ANIMATIONS */
+/********/
+/********/
+
+/*ANIMATIONS*/
+/************/
+header {
+    animation: headerdisplay 1.5s;
+
+}
+
+@keyframes headerdisplay {
+    from {
+        width: 50%;
+    }
+
+    50% {
+        width: 110%
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
 .animationRotate:hover {
     animation: logojadoorotate 1s;
 }
@@ -787,7 +861,7 @@ footer article {
 
     25% {
         translate: 200px 0px;
-        transform: rotate(30deg) scale(1.08);
+        transform: rotate(30deg) scale(1.15);
     }
 
     50% {
@@ -834,43 +908,28 @@ footer article {
 
 }
 
-header {
-    animation: headerdisplay 1.5s;
-
-}
-
-@keyframes headerdisplay {
-    from {
-        width: 50%;
-    }
-
-    50% {
-        width: 110%
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-
 .animationScooter:hover {
-    animation: scooter ease-in 1s;
+    animation: scooter ease-in 6s;
 
 }
 
 @keyframes scooter {
     0% {}
 
-    15% {
+    8% {
         translate: 0px 40px;
         transform: rotate(-8deg);
     }
 
 
     100% {
-        translate: 515px 40px;
+        translate: 3515px 40px;
         transform: rotate(-25deg);
     }
 
+}
+
+.yellowButton:hover {
+    scale: 1.05;
+    transition: 0.3s;
 }
