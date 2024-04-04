@@ -1,7 +1,10 @@
-#1 Revoir section 1 > Confusion entre article et les titres ? Go pour une div ?
+#1 Vérifier reset des paddings/margins + border-box, check les ::after/::before 
+DONE
+#2 Régler le problème de plan sur animation maki rose
+DONE
+#3 Soulignement rose à mettre sur le titre !!!
+DONE
 
-#2 Vérifier reset des paddings/margins + border-box, check les ::after/::before 
-
-#3 Régler le problème de plan sur animation maki rose
-
-#4 Soulignement rose à mettre sur le titre !!!
+###########################################
+#4 GROS REFRESH DU CSS AVANT RESPONSIVE ###
+###########################################
