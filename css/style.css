@@ -293,7 +293,8 @@ nav a {
 #carte-ligne-2 article {
     width: 270px;
     height: 330px;
-
+    position: relative;
+    background-color: white;
 }
 
 #carte-ligne-2 img {
@@ -307,6 +308,30 @@ nav a {
     border-radius: 25px;
     transition: 0.8s;
 }
+
+/* TEST DECO ROSE */
+
+#carte-ligne-2 .carte::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: url("../img/decoration_rose.svg") no-repeat;
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    opacity: 0;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+
+
+#carte-ligne-2 .carte:hover::before {
+    opacity: 1;
+    transform: rotate(0deg);
+    transition-delay: 0.3s;
+}
+
+/*******************************/
 
 #carte-ligne-2 .titre_maki {
     margin-top: 40px;
