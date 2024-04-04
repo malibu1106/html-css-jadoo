@@ -3,3 +3,5 @@
 #2 Vérifier reset des paddings/margins + border-box, check les ::after/::before 
 
 #3 Régler le problème de plan sur animation maki rose
+
+#4 Soulignement rose à mettre sur le titre !!!

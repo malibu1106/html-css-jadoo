@@ -173,6 +173,8 @@ header {
     height: 30px;
 }
 
+
+
 nav {
     margin-right: 10%;
     align-items: center;
@@ -294,7 +296,6 @@ nav a {
     width: 270px;
     height: 330px;
     position: relative;
-    background-color: white;
 }
 
 #carte-ligne-2 img {
@@ -307,11 +308,12 @@ nav a {
     box-shadow: 0px 4px 32px 5px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
     transition: 0.8s;
+    background: white;
 }
 
 /* TEST DECO ROSE */
 
-#carte-ligne-2 .carte::before {
+#carte-ligne-2 .carte::after {
     content: "";
     width: 100px;
     height: 100px;
@@ -322,13 +324,27 @@ nav a {
     opacity: 0;
     transform: rotate(-45deg);
     transition: 0.5s;
+    z-index: -5;
 }
 
-
-#carte-ligne-2 .carte:hover::before {
+#carte-ligne-2 .carte:hover::after {
     opacity: 1;
     transform: rotate(0deg);
     transition-delay: 0.3s;
+}
+
+#carte-ligne-2 .carte::before {
+    content: "";
+    width: 270px;
+    height: 330px;
+    z-index: -1;
+    opacity: 0.5;
+    position: absolute;
+    left: 0px;
+}
+
+#carte-ligne-2 .description_maki {
+    z-index: 200;
 }
 
 /*******************************/
@@ -564,11 +580,12 @@ input {
     font-size: 13px;
     font-weight: 500;
     height: 35px;
+    line-height: 40px;
     margin-top: 5px;
     border: none;
     border-bottom: solid #e2e4e5 1px;
-
 }
+
 
 label {
     font-size: 15px;
@@ -683,4 +700,152 @@ footer article {
     font-weight: 500;
     line-height: 21px;
     text-align: center;
+}
+
+/* ANIMATIONS */
+.animationRotate:hover {
+    animation: logojadoorotate 1s;
+}
+
+@keyframes logojadoorotate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    10% {
+        transform: rotate(30deg)
+    }
+
+    20% {
+        transform: rotate(0deg)
+    }
+
+    30% {
+        transform: rotate(-30deg)
+    }
+
+    40% {
+        transform: rotate(20deg)
+    }
+
+    50% {
+        transform: rotate(-20deg)
+    }
+
+    60% {
+        transform: rotate(15deg)
+    }
+
+    70% {
+        transform: rotate(-15deg)
+    }
+
+    80% {
+        transform: rotate(10deg)
+    }
+
+    90% {
+        transform: rotate(-10deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+.logoJadoo2:hover {
+    animation: jadooTexte 3s ease-out;
+}
+
+@keyframes jadooTexte {
+    0% {}
+
+    25% {
+        translate: 200px 0px;
+        transform: rotate(30deg) scale(1.08);
+    }
+
+    50% {
+        translate: 0px 0px;
+        transform: rotate(30deg);
+
+    }
+
+    60% {
+        transform: rotate(0deg)
+    }
+
+    65% {
+        transform: rotate(25deg)
+    }
+
+    70% {
+        transform: rotate(0deg)
+    }
+
+    75% {
+        transform: rotate(15deg)
+    }
+
+    80% {
+        transform: rotate(0deg)
+    }
+
+    85% {
+        transform: rotate(8deg)
+    }
+
+    90% {
+        transform: rotate(0deg)
+    }
+
+    95% {
+        transform: rotate(5deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+
+}
+
+header {
+    animation: headerdisplay 1.5s;
+
+}
+
+@keyframes headerdisplay {
+    from {
+        width: 50%;
+    }
+
+    50% {
+        width: 110%
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+.animationScooter:hover {
+    animation: scooter ease-in 1s;
+
+}
+
+@keyframes scooter {
+    0% {}
+
+    15% {
+        translate: 0px 40px;
+        transform: rotate(-8deg);
+    }
+
+
+    100% {
+        translate: 515px 40px;
+        transform: rotate(-25deg);
+    }
+
 }
