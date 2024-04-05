@@ -245,14 +245,14 @@ nav ul {
 
 #section1 h1 {
     background-image: url("../img/souligne_rose.svg");
-    background-size: 65%;
+    background-size: 350px;
     background-repeat: no-repeat;
-    background-position: 8% 95%;
+    background-position: 0% 95%;
     margin-top: 40px;
 }
 
 #section1 article {
-    width: 800px;
+    width: 80%;
     padding-top: 120px;
     padding-left: 8%;
 }
@@ -289,21 +289,25 @@ nav ul {
 }
 
 #carte-ligne-1 {
-    width: 980px;
+
     margin: auto;
     margin-top: 50px;
     display: flex;
-    justify-content: space-around;
-    background: url("../img/decoration_filet.svg");
-    background-position: 100% 80%;
-    background-repeat: no-repeat;
+    justify-content: center;
+    flex-wrap: wrap;
     z-index: 1;
+}
 
+#carte-ligne-1 {
+    background: url("../img/decoration_filet.svg");
+    background-position: 100% 30%;
+    background-repeat: no-repeat;
 }
 
 #carte-ligne-1 article {
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 25px;
     width: 280px;
+    margin: 20px;
     z-index: 2;
     background-color: white;
 
@@ -334,15 +338,18 @@ nav ul {
 }
 
 #carte-ligne-2 {
-    width: 1080px;
-    margin: 100px auto;
+    width: 70%;
+    margin: 100px 15%;
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #carte-ligne-2 article {
     width: 270px;
     height: 330px;
     position: relative;
+    margin-bottom: 50px;
 }
 
 #carte-ligne-2 img {
@@ -361,6 +368,10 @@ nav ul {
 .titre_maki {
     font-size: 20px;
     font-weight: 600;
+}
+
+#section2 .yellowButton {
+    margin: -50px auto;
 }
 
 /********/
@@ -413,9 +424,6 @@ nav ul {
     line-height: 28px;
 }
 
-#section2 .yellowButton {
-    margin: auto;
-}
 
 /********/
 /********/
@@ -425,6 +433,7 @@ nav ul {
 #section3 {
     background-image: url("../img/illustration_chef.jpg");
     background-size: cover;
+    background-position: 20% 20%;
     margin-top: 100px;
     padding-top: 100px;
     padding-left: 8%;
@@ -491,6 +500,7 @@ nav ul {
 #section4 {
     background-image: url("../img/illustration_commander.jpg");
     background-size: cover;
+    background-position: 20% 20%;
     height: 1050px;
     padding-top: 420px;
     padding-left: 8%;
@@ -668,20 +678,19 @@ label {
 /********/
 footer {
     background: #f3f3f3;
-    height: 310px;
+    height: auto;
 }
 
 #conteneur_footer {
     display: flex;
+    flex-wrap: wrap;
+    width: 85%;
     margin: auto;
-    height: 280px;
-    width: 80%;
-    min-width: 1390px;
 }
 
 footer article {
     width: 33.33%;
-    padding: 70px;
+    padding: 4%;
 }
 
 #footer1 img {
@@ -702,14 +711,12 @@ footer article {
 }
 
 .footer2_gauche {
-    margin-left: 15%;
-    width: 40%;
-    min-width: 150px;
+    margin-left: 5%;
+    width: 50%;
 }
 
 .footer2_droite {
-    width: 40%;
-    min-width: 150px;
+    width: 50%;
     margin-left: 5%;
 }
 
@@ -728,16 +735,12 @@ footer article {
     line-height: 26px;
     font-weight: 500;
     margin-top: 10px;
-
 }
 
 #footer2 a {
     color: #5E6282
 }
 
-#footer3 {
-    padding-left: 125px;
-}
 
 #footer3 h3 {
     font-size: 18px;
@@ -746,7 +749,12 @@ footer article {
     margin-top: 10px;
 }
 
-#footer3 button {
+#buttonsFooter {
+    display: flex;
+    gap: 5px;
+}
+
+#buttonsFooter button {
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -754,21 +762,20 @@ footer article {
     width: 130px;
     background: black;
     border-radius: 20px;
+    border: none;
     margin-top: 25px;
+    padding: 6px;
 }
 
-.bouton_applications img {
-    height: 20px;
-    width: 20px;
-    margin-left: -5px;
+.bouton_applications {
+    height: 24px;
 }
 
-#footer3 p {
-    display: inline;
-    position: relative;
-    top: -5px;
+#buttonsFooter span {
+    float: right;
+    height: 100%;
+    line-height: 25px;
 }
-
 
 
 .texte_copyright {
@@ -932,4 +939,95 @@ header {
 .yellowButton:hover {
     scale: 1.05;
     transition: 0.3s;
+}
+
+
+/*RESPONSIVE*/
+/************/
+/************/
+/************/
+@media only screen and (max-width:990px) {
+    #carte-ligne-1 {
+        background: none;
+    }
+
+    #section2 {
+        background-image: none;
+    }
+
+    #formulaire_droite {
+        display: none;
+    }
+
+    #formulaire_gauche {
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+    h1 {
+        font-size: 70px !important;
+    }
+
+    #section1 h1 {
+        background-size: 250px;
+    }
+
+    #section1 {
+        height: 750px;
+    }
+
+    /* SECTIONS */
+    #section3,
+    #section4 {
+        background-position: 30%;
+    }
+
+    /*ENTRE SEC 3 ET 4 */
+    #double_illustration {
+        display: none;
+    }
+
+    #section3 {
+        padding-bottom: 100px;
+    }
+
+    #section4 {
+        padding-top: 100px;
+        height: 710px;
+    }
+
+    #section5 h4.uppercase {
+        margin-top: 70px;
+    }
+
+    /* FOOTER*/
+    footer {
+        padding-top: 50px;
+    }
+
+    #conteneur_footer {
+        width: 100%;
+    }
+
+    footer article {
+        width: 50%;
+        padding: 25px;
+    }
+
+    footer article:last-child {
+        width: 300px;
+    }
+
+    #footer3 {
+        margin: auto;
+    }
+
+    #footer3 img {
+        display: block;
+        margin: auto;
+    }
 }

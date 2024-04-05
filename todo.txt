@@ -10,4 +10,7 @@ DONE
 ###########################################
 DONE QUICKLY :D
 
-#5 Fixer histoire de p / a dans les liens applestore/playstore
+#5 Fixer histoire de p / a dans les liens applestore/playstore > button
+DONE
+# Revoir structure FOOTER
+DONE
