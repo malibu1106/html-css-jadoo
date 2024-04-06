@@ -213,6 +213,15 @@ nav {
     align-items: center;
 }
 
+.menu_mobile {
+    display: none;
+}
+
+#icone_menu {
+    display: none;
+}
+
+
 header ul {
     display: inline-flex;
     gap: 30px;
@@ -963,6 +972,15 @@ header {
         width: 100%;
     }
 
+
+
+    nav ul {
+        display: none;
+    }
+
+    .menu_mobile {
+        display: block;
+    }
 
 }
 
