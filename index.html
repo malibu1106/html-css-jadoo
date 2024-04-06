@@ -10,20 +10,23 @@
 </head>
 <body>
     <header>
-        <div id="logo">
-            <img class="logoJadoo animationRotate" alt="Logo du site Jadoo" src="img/logo_jadoo_1.svg">
-            <img class="logoJadoo2" alt="Logo du site Jadoo" src="img/logo_jadoo_2.svg">
+        <div id="haut_header">
+            <div id="logo">
+                <img class="logoJadoo animationRotate" alt="Logo du site Jadoo" src="img/logo_jadoo_1.svg">
+                <img class="logoJadoo2" alt="Logo du site Jadoo" src="img/logo_jadoo_2.svg">
+            </div>
+            <nav class="menu_principal">
+                <ul>
+                    <li class="bouton_menu"><a href="#">Les nouveautés</a></li>
+                    <li class="bouton_menu"><a href="#">Découvrir</a></li>
+                    <li class="bouton_menu"><a href="#">Commander</a></li>
+                    <li class="bouton_menu"><a href="#">Contactez-nous</a></li>                    
+                </ul>
+                <img id="icone_menu_burger" src="img/burger_icon.svg" alt="Icone Menu" onClick="menu()">            
+            </nav>
+            
         </div>
-        <nav class="menu_principal">
-            <ul>
-                <li class="bouton_menu"><a href="#">Les nouveautés</a></li>
-                <li class="bouton_menu"><a href="#">Découvrir</a></li>
-                <li class="bouton_menu"><a href="#">Commander</a></li>
-                <li class="bouton_menu"><a href="#">Contactez-nous</a></li>                    
-            </ul>            
-        </nav>
-        <nav class="menu_mobile">
-            <img id="icone_menu_burger" src="img/burger_icon.svg" alt="Icone Menu">
+        <nav id="menu_mobile">            
             <ul>
                 <li class="bouton_menu_mobile"><a href="#">Les nouveautés</a></li>
                 <li class="bouton_menu_mobile"><a href="#">Découvrir</a></li>
@@ -232,5 +235,6 @@
         </div>
         <p class="texte_poppins_regular texte_copyright texte_gris_4">Tous droits réservés @jadoo.com</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

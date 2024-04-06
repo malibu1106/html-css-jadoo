@@ -186,15 +186,18 @@ h5 {
 /*HEADER*/
 /********/
 header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#haut_header {
     height: 70px;
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 2;
 }
 
 #logo {
@@ -213,11 +216,13 @@ nav {
     align-items: center;
 }
 
-.menu_mobile {
+#menu_mobile {
     display: none;
+    width: 100%;
+    background-color: white;
 }
 
-#icone_menu {
+#icone_menu_burger {
     display: none;
 }
 
@@ -955,33 +960,15 @@ header {
 /************/
 /************/
 /************/
-@media only screen and (max-width:990px) {
-    #carte-ligne-1 {
-        background: none;
+
+
+
+
+@media only screen and (min-width:990px) {
+    #menu_mobile {
+        height: 0px;
+        visibility: hidden;
     }
-
-    #section2 {
-        background-image: none;
-    }
-
-    #formulaire_droite {
-        display: none;
-    }
-
-    #formulaire_gauche {
-        width: 100%;
-    }
-
-
-
-    nav ul {
-        display: none;
-    }
-
-    .menu_mobile {
-        display: block;
-    }
-
 }
 
 @media only screen and (max-width: 1280px) {
@@ -1048,4 +1035,53 @@ header {
         display: block;
         margin: auto;
     }
+}
+
+@media only screen and (max-width:990px) {
+    h1 {
+        font-size: 58px !important;
+    }
+
+    #carte-ligne-1 {
+        background: none;
+    }
+
+    #section2 {
+        background-image: none;
+    }
+
+    #formulaire_droite {
+        display: none;
+    }
+
+    #formulaire_gauche {
+        width: 100%;
+    }
+
+
+
+    .menu_principal ul {
+        display: none;
+    }
+
+    #icone_menu_burger {
+        display: inline-flex;
+    }
+
+
+    #menu_mobile ul {
+        display: block;
+        line-height: 70px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #menu_mobile li:last-child {
+        border-bottom: solid black 2px;
+    }
+
+    #menu_mobile li {
+        border-top: solid black 1px;
+    }
+
 }
