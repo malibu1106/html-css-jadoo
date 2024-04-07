@@ -12,5 +12,6 @@ DONE QUICKLY :D
 
 #5 Fixer histoire de p / a dans les liens applestore/playstore > button
 DONE
-# Revoir structure FOOTER
+#6 Revoir structure FOOTER
 DONE
+#7 REGLER PROBLEME LARGEUR 640px
