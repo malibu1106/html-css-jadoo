@@ -17,10 +17,10 @@
             </div>
             <nav class="menu_principal">
                 <ul>
-                    <li class="bouton_menu"><a href="#">Les nouveautés</a></li>
-                    <li class="bouton_menu"><a href="#">Découvrir</a></li>
-                    <li class="bouton_menu"><a href="#">Commander</a></li>
-                    <li class="bouton_menu"><a href="#">Contactez-nous</a></li>                    
+                    <li class="bouton_menu"><a href="#section2">Les nouveautés</a></li>
+                    <li class="bouton_menu"><a href="#ancre-decouvrir">Découvrir</a></li>
+                    <li class="bouton_menu"><a href="#ancre-commande">Commander</a></li>
+                    <li class="bouton_menu"><a href="#ancre-formulaire">Contactez-nous</a></li>                    
                 </ul>
                 <img id="icone_menu_burger" src="img/burger_icon.svg" alt="Icone Menu" onClick="menu()">            
             </nav>
@@ -28,10 +28,10 @@
         </div>
         <nav id="menu_mobile">            
             <ul>
-                <li class="bouton_menu_mobile"><a href="#">Les nouveautés</a></li>
-                <li class="bouton_menu_mobile"><a href="#">Découvrir</a></li>
-                <li class="bouton_menu_mobile"><a href="#">Commander</a></li>
-                <li class="bouton_menu_mobile"><a href="#">Contactez-nous</a></li>                    
+                <a href="#section2" onClick="menu()"><li class="bouton_menu_mobile">Les nouveautés</li></a>
+                <a href="#ancre-decouvrir" onClick="menu()"><li class="bouton_menu_mobile">Découvrir</li></a>
+                <a href="#ancre-commande" onClick="menu()"><li class="bouton_menu_mobile">Commander</li></a>
+                <a href="#ancre-formulaire" onClick="menu()"><li class="bouton_menu_mobile">Contactez-nous</li></a>                    
             </ul> 
         </nav>
     </header>
@@ -113,7 +113,7 @@
             <div id="conteneur_video">
                 <img id="bouton_lecture" alt="Lire la vidéo" src="img/button_play.svg">
             </div>
-            <h1 class="texte_blanc texte_volkhov_bold">Un voyage gastronomique entre le Japon et la France</h1>
+            <h1 id="ancre-decouvrir" class="texte_blanc texte_volkhov_bold">Un voyage gastronomique entre le Japon et la France</h1>
             <h5 class="texte_blanc texte_poppins_regular">Passé par des maisons étoilées en France, le cuisinier japonais s'est forgé une solide expérience dans l'Hexagone : aujourd'hui franc-comtois d'adoption, il maîtrise aujourd'hui les mélanges de cultures et de saveurs chaque jour au sein de son restaurant gastronomique.</h5>
         </article>
         <div id="double_illustration">
@@ -122,7 +122,7 @@
         </div>
     </section>
     <section id="section4">
-        <h4 class="texte_gris_4 texte_poppins_regular uppercase">Rapide et pratique</h4>
+        <h4 id="ancre-commande" class="texte_gris_4 texte_poppins_regular uppercase">Rapide et pratique</h4>
         <h2 class="texte_violet texte_volkhov_bold"><span class="texte_orange">Commandez</span> sur le site Jadoo</h2>
         <div id="conteneur-type-commandes">
             <article class="type-commandes">
@@ -161,7 +161,7 @@
         <button class="yellowButton">Découvrir la carte</button>
     </section>
     <section id="section5">
-        <h4 class="texte_gris_4 texte_poppins_regular uppercase">Prendre rendez-vous</h4>
+        <h4 id="ancre-formulaire" class="texte_gris_4 texte_poppins_regular uppercase">Prendre rendez-vous</h4>
         <h2 class="texte_violet texte_volkhov_bold">Contactez-nous<br> pour réserver au restaurant</h2>
         <div id="container_formulaire">
             <div id="formulaire_gauche">
@@ -200,7 +200,7 @@
             <article id="footer1">
                 <img class="animationRotate image50px" alt="Logo du site Jadoo" src="img/logo_jadoo_1.svg">
                 <img class="logoJadoo2" height="50px" alt="Logo du site Jadoo" src="img/logo_jadoo_2.svg">
-                <p class="texte_poppins_regular texte_gris_4">Un voyage gastronomique entre<br>le Japon et la France</p>
+                <p class="texte_poppins_regular texte_gris_4">Un voyage gastronomique entre le Japon et la France</p>
             </article>
             <article id="footer2">
                 <div class="footer2_gauche">
